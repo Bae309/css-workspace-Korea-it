@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>59_position_z-index</title>
+    <style>
+        div {
+            width : 100px;
+            height: 100px;
+        }
+        .absoulte-box {
+            position: absolute;
+        }
+        .orange {
+            background-color: orange;
+            z-index: 1;
+            position: fixed;
+        }
+        .red {
+            background-color: red;
+            left: 50px;
+            top : 50px;
+            z-index: -1;
+        }
+        .green {
+            background-color: green;
+            left: 100px;
+            top: 100px;
+            z-index: -2;
+        }
+        .blue {
+            background-color: blue;
+            left: 150px;
+            top: 150px;
+            z-index: -3;
+        }
+    </style>
+</head>
+<body>
+    <div class="orange"></div>
+    <div class="red absoulte-box"></div>
+    <div class="green absoulte-box"></div>
+    <div class="blue absoulte-box"></div>
+</body>
+</html>
