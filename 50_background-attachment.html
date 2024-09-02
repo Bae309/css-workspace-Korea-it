@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin : 0px;
+        }
+        body, html {
+            width : 100%;
+            height: 100%;
+            
+        }
+        .bg-wrap {
+            height: 100%;
+            background-image: url("http://poiemaweb.com/img/bg/stock-photo-125979219.jpg");
+            background-size: 500px 300px;
+            background-size: 100% 100%;
+            background-size: cover;
+            /* background-size: contain; */
+            /* overflow: hidden; */
+            overflow: auto;
+
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        
+        .normal {
+            background-image: url("http://poiemaweb.com/img/bg/stock-photo-155153867.jpg");
+        }
+
+        .page-wrap {
+            width : 400px;
+            background-color: white;
+            margin: 50px auto;
+            padding : 30px;
+        }
+
+        .parallax {
+            background-image: url("http://poiemaweb.com/img/bg/stock-photo-125979219.jpg");
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-wrap parallax">
+        <div class="page-wrap">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Deleniti dolorem odio quis dolores quam. 
+                Facilis mollitia quasi perferendis minima, 
+                molestias voluptas impedit quis tenetur pariatur quod laboriosam ab, ullam ea.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Deleniti dolorem odio quis dolores quam. 
+                Facilis mollitia quasi perferendis minima, 
+                molestias voluptas impedit quis tenetur pariatur quod laboriosam ab, ullam ea.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Deleniti dolorem odio quis dolores quam. 
+                Facilis mollitia quasi perferendis minima, 
+                molestias voluptas impedit quis tenetur pariatur quod laboriosam ab, ullam ea.
+            </p>
+        </div>
+    </div>
+    <div class="bg-wrap normal"></div>
+</body>
+</html>
